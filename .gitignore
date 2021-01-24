@@ -125,3 +125,9 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+/cmake-build-debug/
+/cmake-build-debug/cmake_install.cmake
+/cmake-build-debug/CMakeCache.txt
+/cmake-build-debug/glfw3.dll
+/cmake-build-debug/Makefile
+/cmake-build-debug/Visualization_OpenGL.cbp
