@@ -4,7 +4,7 @@
 int main() {
     //创建主窗口
     MainWindow mainWindow("TestWindow",1600,900, true);
-    mainWindow.setIcon(R"(E:\Engine\Cache\testIcon-160x160.png)");
+    mainWindow.setIcon("./Assets/testIcon-160x160.png");
     mainWindow.setAspectRatio();
     mainWindow.setVSync();
     //mainWindow.setWindowedFullScreen();
@@ -12,12 +12,12 @@ int main() {
 
     //创建着色器
     Shader testShader;
-    const char* vShaderSource = R"(E:\Engine\Visualization_OpenGL\Shaders\BaseShader\VertexShader.glsl)";
-    const char* fShaderSource = R"(E:\Engine\Visualization_OpenGL\Shaders\BaseShader\FragmentShader.glsl)";
+    const char* vShaderSource = "./Shaders/BaseShader/VertexShader.glsl";
+    const char* fShaderSource = "./Shaders/BaseShader/FragmentShader.glsl";
     testShader.Compile(vShaderSource, fShaderSource);
 
     //读取图片
-    const char* texturePath = R"(E:\Engine\Cache\KMR.jpg)";
+    const char* texturePath = "./Assets/KMR.jpg";
     Texture2D texture = ResourceManager::readTexture(texturePath);
 
     //读取顶点数据
